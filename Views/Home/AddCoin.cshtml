@@ -1,0 +1,25 @@
+﻿@model Coin
+
+@{
+    ViewData["Title"] = "Add new";
+}
+
+<h2>add new coin info:</h2>
+<form asp-action="Save" method="post">
+    <div>
+      @*   <label lasp-for="Id">Id</label>
+        <input class="form-control" asp-for="Id" /> *@
+        <label lasp-for="Year">Year</label>
+        <input class="form-control" asp-for="Year" />
+        <label lasp-for="Country">Country</label>
+        <input class="form-control" asp-for="Country" />
+        <label lasp-for="Metal">Metal</label>
+        <input class="form-control" asp-for="Metal" />
+        <label lasp-for="Face">Face</label>
+        <input class="form-control" asp-for="Face" />
+        <label lasp-for="Denomination">Denomination</label>
+        <input class="form-control" asp-for="Denomination" />
+
+        <input type="submit" value="Save" />
+    </div>
+</form>
